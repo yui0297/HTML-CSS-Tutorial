@@ -434,7 +434,71 @@ CSS (Cascading Style Sheets) は、HTMLのスタイルを指定するための�
     - **`background-size: cover`**: 画像をページ全体にカバーさせる設定です。
     
     <img src="https://github.com/user-attachments/assets/3bf909a6-390b-4c51-adce-f49dd6dbdef5" width=300>
-    
+
+
+<details>
+<summary>コード完成形</summary>
+
+ディレクトリ構成
+```
+.
+├── README.md
+├── image
+│   ├── background.png
+│   └── profile_image.png
+├── index.html
+└── styles.css
+```
+
+
+index.html: 
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<title>自己紹介サイト</title>
+</head>
+<body>
+	<img src="./image/profile_image.png" alt="プロフィール画像">
+	<h1>自己紹介</h1>
+	<p>こんにちは、私はWeb開発者です。</p>
+</body>
+<footer>&copy; 2024 Your Name</footer>
+</html>
+```
+
+styles.css:
+```css
+body {
+    text-align: center;
+    padding: 16px;
+    background-image: url('./image/background.png');
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+img {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin-bottom: 16px;
+}
+```
+
+</details>
 
 ## **12. GitHubへプッシュ**
 
